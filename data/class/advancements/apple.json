@@ -1,0 +1,34 @@
+{
+    "parent": "class:oak_log",
+    "display":{
+        "icon":{
+            "item":"minecraft:apple" 
+        },
+        "title":"苹果?苹果!",
+        "description":"一天一苹果,医生远离我",
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "get_apple":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions":{
+                "items":[
+                    {
+                        "items":["minecraft:apple"]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements":[
+        [
+            "get_apple"
+        ]
+    ],
+    "rewards":{
+        "experience":100
+    }
+}

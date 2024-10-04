@@ -1,0 +1,9 @@
+{
+    "type":"minecraft:smelting",
+    "ingredient":{
+      "item":"minecraft:gravel"
+    },
+    "result":"minecraft:sand",
+    "experience":10,
+    "cookingTime":600
+  }

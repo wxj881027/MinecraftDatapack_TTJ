@@ -1,0 +1,35 @@
+{
+    "parent": "class:root",
+    "display":{
+        "icon":{
+            "item":"minecraft:end_portal_frame" 
+        },
+        "title":"你家?我家!",
+        "description":"如何向我证明你的实力呢",
+        "frame":"challenge",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":true
+    },
+    "criteria":{
+        "get_nether_star":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions":{
+                "items":[
+                    {
+                        "items":["minecraft:nether_star"]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements":[
+        [
+            "get_nether_star"
+        ]
+    ],
+    "rewards":{
+        "experience":100,
+        "function": "class:the_end_to_rewards"
+    }
+}

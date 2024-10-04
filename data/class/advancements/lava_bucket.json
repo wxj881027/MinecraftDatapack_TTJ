@@ -1,0 +1,36 @@
+{
+    "parent": "class:water_bucket",
+    "display":{
+        "icon":{
+            "item":"minecraft:lava_bucket" 
+        },
+        "title":"嗯,稳定方块",
+        "description":"这才是石器时代嘛(指正)",
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "get_lava_bucket":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions":{
+                "items":[
+                    {
+                        "items":[
+                            "minecraft:lava_bucket"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements":[
+        [
+            "get_lava_bucket"
+        ]
+    ],
+    "rewards":{
+        "experience":100
+    }
+}

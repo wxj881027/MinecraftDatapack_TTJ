@@ -1,0 +1,1 @@
+give @r minecraft:end_portal_frame 15

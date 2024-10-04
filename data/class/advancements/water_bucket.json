@@ -1,0 +1,37 @@
+{
+    "parent": "class:bucket",
+    "display":{
+        "icon":{
+            "item":"minecraft:water_bucket" 
+        },
+        "title":"无线水?无限水?",
+        "description":"一半一半啦(各种意义上的)",
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "get_water_bucket":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions":{
+                "items":[
+                    {
+                        "items":[
+                            "minecraft:water_bucket"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements":[
+        [
+            "get_water_bucket"
+        ]
+    ],
+    "rewards":{
+        "experience":100,
+        "function":"class:rewards_lava_bucket"
+    }
+}

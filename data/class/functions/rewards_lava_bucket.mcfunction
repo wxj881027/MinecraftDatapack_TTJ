@@ -1,0 +1,1 @@
+give @r minecraft:lava_bucket 1

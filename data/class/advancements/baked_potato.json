@@ -1,0 +1,36 @@
+{
+    "parent": "class:potato",
+    "display":{
+        "icon":{
+            "item":"minecraft:baked_potato" 
+        },
+        "title":"我去,熟啦",
+        "description":"禁止'茹毛饮血'",
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "get_baked_potato":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions":{
+                "items":[
+                    {
+                        "items":[
+                            "minecraft:baked_potato"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements":[
+        [
+            "get_baked_potato"
+        ]
+    ],
+    "rewards":{
+        "experience":100
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "type":"crafting_shaped",
+    "pattern":[
+        "#@ ",
+        "   ",
+        "   "
+    ],
+    "key":{
+        "#":{
+            "item": "minecraft:lava_bucket"
+        },
+        "@":{
+            "item": "minecraft:water_bucket"
+        }
+    },
+    "result":{
+        "item":"minecraft:obsidian",
+        "count":1
+    }
+}

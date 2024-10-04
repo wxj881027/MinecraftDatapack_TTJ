@@ -1,0 +1,34 @@
+{
+    "parent": "class:oak_planks",
+    "display":{
+        "icon":{
+            "item":"minecraft:oak_slab" 
+        },
+        "title":"不刷怪?产量多?",
+        "description":"知不知道刷怪平台的魅力啊",
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "get_oak_slab":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions":{
+                "items":[
+                    {
+                        "items":["minecraft:oak_slab"]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements":[
+        [
+            "get_oak_slab"
+        ]
+    ],
+    "rewards":{
+        "experience":100
+    }
+}

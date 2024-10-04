@@ -1,0 +1,100 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "functions": [
+                {
+                    "function": "minecraft:set_lore",
+                    "lore": [
+                        "糖糖教御赐"
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_nugget",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "uniform",
+                                "min": 0,
+                                "max": 2
+                            }
+                        }
+                    ],
+                    "weight": 9
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_nugget",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "uniform",
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_ingot",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "uniform",
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "weight": 2
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_ingot",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "uniform",
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:empty",
+                    "weight": 83
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gunpowder",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "uniform",
+                                "min": 0,
+                                "max": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

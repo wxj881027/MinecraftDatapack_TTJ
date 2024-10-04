@@ -1,0 +1,36 @@
+{
+    "parent": "class:apple",
+    "display":{
+        "icon":{
+            "item":"minecraft:oak_sapling" 
+        },
+        "title":"树苗",
+        "description":"生命自有出路",
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "get_oak_sapling":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions":{
+                "items":[
+                    {
+                        "items":[
+                            "minecraft:oak_sapling"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements":[
+        [
+            "get_oak_sapling"
+        ]
+    ],
+    "rewards":{
+        "experience":100
+    }
+}

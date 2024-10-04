@@ -1,0 +1,36 @@
+{
+    "parent": "class:root",
+    "display":{
+        "icon":{
+            "item":"minecraft:iron_nugget" 
+        },
+        "title":"铁!....粒??",
+        "description":"嗯,年轻人的第一桶铁(水)",
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "get_iron_nugget":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions":{
+                "items":[
+                    {
+                        "items":[
+                            "minecraft:iron_nugget"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements":[
+        [
+            "get_iron_nugget"
+        ]
+    ],
+    "rewards":{
+        "experience":100
+    }
+}

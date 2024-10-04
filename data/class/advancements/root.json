@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:grass_block"
+        },
+        "title": "糖糖教的起点",
+        "description": "梦开始的地方",
+        "frame": "task",
+        "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "root": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

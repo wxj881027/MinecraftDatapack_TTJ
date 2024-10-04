@@ -1,0 +1,36 @@
+{
+    "parent": "class:dirt",
+    "display":{
+        "icon":{
+            "item":"minecraft:potato" 
+        },
+        "title":"第二食物",
+        "description":"天天吃胡萝卜会..........不会怎么样,我喜欢",
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "get_potato":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions":{
+                "items":[
+                    {
+                        "items":[
+                            "minecraft:potato"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements":[
+        [
+            "get_potato"
+        ]
+    ],
+    "rewards":{
+        "experience":100
+    }
+}

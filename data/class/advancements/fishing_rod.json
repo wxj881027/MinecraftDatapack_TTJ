@@ -1,0 +1,36 @@
+{
+    "parent": "class:water_bucket",
+    "display":{
+        "icon":{
+            "item":"minecraft:fishing_rod" 
+        },
+        "title":"钓鱼佬永不空军",
+        "description":"俗话说,钓鱼是第一生产力嘛",
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "get_fishing_rod":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions":{
+                "items":[
+                    {
+                        "items":[
+                            "minecraft:fishing_rod"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements":[
+        [
+            "get_fishing_rod"
+        ]
+    ],
+    "rewards":{
+        "experience":100
+    }
+}

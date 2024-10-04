@@ -1,0 +1,36 @@
+{
+    "parent": "class:iron_nugget",
+    "display":{
+        "icon":{
+            "item":"minecraft:bucket" 
+        },
+        "title":"年轻人的第一桶",
+        "description":"汇聚的不是水,是希望",
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "get_bucket":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions":{
+                "items":[
+                    {
+                        "items":[
+                            "minecraft:bucket"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements":[
+        [
+            "get_bucket"
+        ]
+    ],
+    "rewards":{
+        "experience":100
+    }
+}

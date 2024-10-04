@@ -1,0 +1,36 @@
+{
+    "parent": "class:root",
+    "display":{
+        "icon":{
+            "item":"minecraft:dirt" 
+        },
+        "title":"厚实之物",
+        "description":"厚实的泥土给人莫大的安心",
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "get_dirt":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions":{
+                "items":[
+                    {
+                        "items":[
+                            "minecraft:dirt"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements":[
+        [
+            "get_dirt"
+        ]
+    ],
+    "rewards":{
+        "experience":100
+    }
+}

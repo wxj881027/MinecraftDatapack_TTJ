@@ -1,0 +1,36 @@
+{
+    "parent": "class:carrot",
+    "display":{
+        "icon":{
+            "item":"minecraft:golden_carrot" 
+        },
+        "title":"不是哥们,是金哥们",
+        "description":"哥们,你这么奢侈?",
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":true,
+        "hidden":false
+    },
+    "criteria":{
+        "get_golden_carrot":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions":{
+                "items":[
+                    {
+                        "items":[
+                            "minecraft:golden_carrot"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements":[
+        [
+            "get_golden_carrot"
+        ]
+    ],
+    "rewards":{
+        "experience":100
+    }
+}
